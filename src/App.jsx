@@ -1,11 +1,13 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      {' '}
-      <h1>This is dummy subject</h1> <p>RK anand</p>
-    </div>
+    <Switch>
+      <Route path="/">
+        This is home <h1>Hello world</h1>{' '}
+      </Route>
+    </Switch>
   );
 }
 export default App;
